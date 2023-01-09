@@ -3,7 +3,7 @@
 #include <iostream>
 
 class Dancing : public Talent {
-    void addTalents() override {
+    void showTalent() override {
         std::cout << "Dance";
     }
 };

@@ -3,7 +3,7 @@
 #include <iostream>
 
 class Counting : public Talent {
-    void addTalents() override {
+    void showTalent() override {
         std::cout << "Count";
     }  
 };

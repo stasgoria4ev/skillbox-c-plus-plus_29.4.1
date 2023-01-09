@@ -2,5 +2,5 @@
 
 class Talent {
 public:    
-    virtual void addTalents() = 0;
+    virtual void showTalent() = 0;
 };

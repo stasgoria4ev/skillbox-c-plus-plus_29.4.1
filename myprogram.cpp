@@ -7,9 +7,14 @@
 int main() { 
     Dog dog1("Steve");
     
-    dog1.talents.push_back(new Dancing);
-    dog1.talents.push_back(new Swimming);
-    dog1.talents.push_back(new Counting);
+    Talent* dance = new Dancing;
+    dog1.addTalents(dance);
+    
+    Talent* swim = new Swimming;
+    dog1.addTalents(swim);
+    
+    Talent* count = new Counting;
+    dog1.addTalents(count);
 
     dog1.show_talents();
 }
