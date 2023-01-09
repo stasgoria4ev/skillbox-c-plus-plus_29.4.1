@@ -1,12 +1,9 @@
 #pragma once
 #include "Talent.h"
+#include <iostream>
 
 class Swimming : public Talent {
     void addTalents() override {
-        talents.push_back("Swim");
+        std::cout << "Swim";
     }
-public:
-    Swimming() {
-        addTalents();
-    }    
 };

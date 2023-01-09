@@ -1,9 +1,6 @@
 #pragma once
-#include <vector>
-#include <string>
-
-std::vector <std::string> talents;
 
 class Talent {
+public:    
     virtual void addTalents() = 0;
 };

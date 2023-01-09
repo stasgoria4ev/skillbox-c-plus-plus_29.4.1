@@ -1,12 +1,9 @@
 #pragma once
 #include "Talent.h"
+#include <iostream>
 
 class Counting : public Talent {
     void addTalents() override {
-        talents.push_back("Count");
-    }
-public:
-    Counting() {
-        addTalents();
-    }    
+        std::cout << "Count";
+    }  
 };

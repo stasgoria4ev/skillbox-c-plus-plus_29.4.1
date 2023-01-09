@@ -3,15 +3,13 @@
 #include "Dancing.h"
 #include "Counting.h"
 #include "Dog.h"
-#include <iostream>
-#include <string>
 
 int main() { 
     Dog dog1("Steve");
     
-    Talent* dance = new Dancing;
-    Talent* swim = new Swimming;
-    Talent* count = new Counting;
+    dog1.talents.push_back(new Dancing);
+    dog1.talents.push_back(new Swimming);
+    dog1.talents.push_back(new Counting);
 
     dog1.show_talents();
 }
